@@ -20,8 +20,7 @@
 * Intra-class variation : 분류해야할 클래스의 범위가 많은 경우   
 * Ambiguity : 모호성   
 * Fine-Grained Categories : 같은 집단안에 다른 분류가 존재할 수 있음(고양이 종이 여러개,,)   
-![Fine-Grained Categories](https://user-images.githubusercontent.com/81468129/169694116-722e1cb9-557a-426a-8c48-0b4d59e18b4d.jpg)   
-<img width="156" alt="image" src="https://user-images.githubusercontent.com/81468129/169694202-9dd21c25-d8c3-4df7-be22-a4180997408f.png"> 
+![image](https://user-images.githubusercontent.com/81468129/169694994-ad748c68-32fe-4848-9f27-8aa16e49c4c5.png)
 
 ### 활용분야
 * recognition   
