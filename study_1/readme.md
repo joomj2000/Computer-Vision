@@ -12,7 +12,7 @@
 ### Semantic Gap(의미적 차이)
 컴퓨터가 이미지를 3차원 배열 값으로 인식하여 생기는 문제   
 * viewpoint variation : 객체의 단일 인스턴스는 카메라에 의해 시점 바뀔 수 있음   
-<img width="156" alt="image" src="https://user-images.githubusercontent.com/81468129/169694202-9dd21c25-d8c3-4df7-be22-a4180997408f.png">   
+<img width="156" alt="image" src="https://user-images.githubusercontent.com/81468129/169694202-9dd21c25-d8c3-4df7-be22-a4180997408f.png">    
 * Scale variation : 크기 차이(이미지의 크기뿐 아니라 실제 크기도 포함)   
 * Deformation : 객체의 형태 변화   
 * Occlusion : 객체의 모든 부분이 보지지 않을 수 있음   
