@@ -11,8 +11,7 @@
 
 ### Semantic Gap(의미적 차이)
 컴퓨터가 이미지를 3차원 배열 값으로 인식하여 생기는 문제   
-* viewpoint variation : 객체의 단일 인스턴스는 카메라에 의해 시점 바뀔 수 있음   
-<img width="156" alt="image" src="https://user-images.githubusercontent.com/81468129/169694202-9dd21c25-d8c3-4df7-be22-a4180997408f.png">    
+* viewpoint variation : 객체의 단일 인스턴스는 카메라에 의해 시점 바뀔 수 있음      
 * Scale variation : 크기 차이(이미지의 크기뿐 아니라 실제 크기도 포함)   
 * Deformation : 객체의 형태 변화   
 * Occlusion : 객체의 모든 부분이 보지지 않을 수 있음   
@@ -21,7 +20,8 @@
 * Intra-class variation : 분류해야할 클래스의 범위가 많은 경우   
 * Ambiguity : 모호성   
 * Fine-Grained Categories : 같은 집단안에 다른 분류가 존재할 수 있음(고양이 종이 여러개,,)   
-![Fine-Grained Categories](https://user-images.githubusercontent.com/81468129/169694116-722e1cb9-557a-426a-8c48-0b4d59e18b4d.jpg)
+![Fine-Grained Categories](https://user-images.githubusercontent.com/81468129/169694116-722e1cb9-557a-426a-8c48-0b4d59e18b4d.jpg)   
+<img width="156" alt="image" src="https://user-images.githubusercontent.com/81468129/169694202-9dd21c25-d8c3-4df7-be22-a4180997408f.png"> 
 
 ### 활용분야
 * recognition   
