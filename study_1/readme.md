@@ -19,7 +19,7 @@
 * Background clutter : 주변환경과 섞일 수 있음   
 * Intra-class variation : 분류해야할 클래스의 범위가 많은 경우   
 * Ambiguity : 모호성   
-* Fine-Grained Categories : 같은 집단안에 다른 분류가 존재할 수 있음(고양이 종이 여러개,,)   
+* Fine-Grained Categories : 같은 집단안에 다른 분류가 존재할 수 있음(ex 강이지 종)   
 ![image](https://user-images.githubusercontent.com/81468129/169694994-ad748c68-32fe-4848-9f27-8aa16e49c4c5.png)
 
 ### 활용분야
@@ -29,3 +29,17 @@
 * image edition   
 * style transfer   
 * generating image   
+
+
+
+
+
+
+
+
+
+
+
+
+<https://bskyvision.com/643>   
+<https://velog.io/@good159897/Image-classificationlect-2>   
