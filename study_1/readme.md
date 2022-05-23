@@ -4,14 +4,16 @@
     
 컴퓨터 비전의 연구 분야는 크게 여섯 가지로 구분.    
 영상에서 대상을 찾는 검출(Detection), 영상을 여러 개의 픽셀 집합으로 나누는 분할(Segmentation), 찾은 대상이 무엇인지 식별하는 인식(Recognition), 유형에 맞게 분리하는 분류(Classification), 영상의 해상도 등 품질을 높이는 개선(Enhancement), 손실된 영상을 복구하는 복원(Restoration) 영역   
-
+<br/>
+<br/>
 ### 목표
 * naming :영상을 인식해서 어떤 물체인 지 분류   
 * captioning :영상을 보고 문장으로 표현   
 * 3D structure :영상을 보고 3 차원 구조 형태를 알아냄   
 * actions:영상을 보고 어떤 행동을 취할 수 있을 지 판단   
 * matching :영상을 다른 각도에서 봤을 때 같은 부분을 찾음   
-
+<br/>
+<br/>
 ### Semantic Gap(의미적 차이)
 컴퓨터가 이미지를 3차원 배열 값으로 인식하여 생기는 문제   
 * viewpoint variation : 객체의 단일 인스턴스는 카메라에 의해 시점 바뀔 수 있음      
@@ -24,7 +26,8 @@
 * Ambiguity : 모호성   
 * Fine-Grained Categories : 같은 집단안에 다른 분류가 존재할 수 있음(ex 강이지 종)   
 ![image](https://user-images.githubusercontent.com/81468129/169694994-ad748c68-32fe-4848-9f27-8aa16e49c4c5.png)
-
+<br/>
+<br/>
 ### 활용분야
 컴퓨터 비전은 얼굴 인식 기술, 의료 이미지 분석, 자율주행차, 보안 감시 등 다양한 영역에서 활용    
 
@@ -35,10 +38,10 @@
 * style transfer   
 * generating image   
        
-     
-    
-        
-        
+ <br/>    
+ <br/>   
+ <br/>       
+ <br/>       
 ## Camera
 ### Homogeneous Coordinates
 사진(2D)을 원래모습(3D)를 표현
@@ -72,7 +75,7 @@ Intrinsic matrix : camera coordinate 로 바뀐 점을 카메라의 사영하는
 
 
 
-
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
 
