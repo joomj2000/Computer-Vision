@@ -14,6 +14,7 @@
 * matching :영상을 다른 각도에서 봤을 때 같은 부분을 찾음   
 <br/>
 <br/>   
+    
 ### Semantic Gap(의미적 차이)
 컴퓨터가 이미지를 3차원 배열 값으로 인식하여 생기는 문제   
 * viewpoint variation : 객체의 단일 인스턴스는 카메라에 의해 시점 바뀔 수 있음      
@@ -27,7 +28,7 @@
 * Fine-Grained Categories : 같은 집단안에 다른 분류가 존재할 수 있음(ex 강이지 종)   
 ![image](https://user-images.githubusercontent.com/81468129/169694994-ad748c68-32fe-4848-9f27-8aa16e49c4c5.png)
 <br/>
-<br/>   
+<br/>       
 ### 활용분야
 컴퓨터 비전은 얼굴 인식 기술, 의료 이미지 분석, 자율주행차, 보안 감시 등 다양한 영역에서 활용    
 
