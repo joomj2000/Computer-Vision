@@ -39,6 +39,13 @@
 * image edition : 저해상도를 고해상도를 바꾸는 등 
 * style transfer   
 * generating image   
+<br/><br/>   
+
+* 제조업 : 완성된 부품의 이미지를 촬영하여 정상 제품 이미지와 비교함-> 결함 확인 (머신비전)
+* 리테일 : 쇼핑객 분석하여 제품 배치, 재고 파악, 고객 통계자료 파악-> 위험과 운영비용 줄이고 매장내 트래픽 최적화에 이용
+* 자율주행자동차 : 객체를 감지하여 입력받은 시각 정보 처리
+* 의료서비스 : mri, x-ray등의 이미지 검사-> 이상징후 감지   
+
        
  <br/>    
  <br/>   
@@ -89,3 +96,4 @@ Intrinsic matrix : camera coordinate 로 바뀐 점을 카메라의 사영하는
 <https://bskyvision.com/643>   
 <https://velog.io/@good159897/Image-classificationlect-2>   
 <https://darkpgmr.tistory.com/78>   
+<https://m.blog.naver.com/PostView.naverblogId=sw_maestro&logNo=222082648250&categoryNo=0&proxyReferer=>
