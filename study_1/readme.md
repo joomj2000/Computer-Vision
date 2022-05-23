@@ -26,9 +26,10 @@
 * Intra-class variation : 분류해야할 클래스의 범위가 많은 경우   
 * Ambiguity : 모호성   
 * Fine-Grained Categories : 같은 집단안에 다른 분류가 존재할 수 있음(ex 강이지 종)   
-![image](https://user-images.githubusercontent.com/81468129/169694994-ad748c68-32fe-4848-9f27-8aa16e49c4c5.png)
+![image](https://user-images.githubusercontent.com/81468129/169694994-ad748c68-32fe-4848-9f27-8aa16e49c4c5.png)    
 <br/>
-<br/>       
+<br/>           
+      
 ### 활용분야
 컴퓨터 비전은 얼굴 인식 기술, 의료 이미지 분석, 자율주행차, 보안 감시 등 다양한 영역에서 활용    
 
