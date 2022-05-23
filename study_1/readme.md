@@ -36,7 +36,9 @@
 * generating image   
        
      
-      
+    
+        
+        
 ## Camera
 ### Homogeneous Coordinates
 사진(2D)을 원래모습(3D)를 표현
@@ -50,12 +52,12 @@ x->fx/z+px, y->fy/z+py
    
 <img width="320" alt="image" src="https://user-images.githubusercontent.com/81468129/169744705-dce8b126-c205-4877-9cca-b095fac9e79f.png">  
 
-###word coordinate frame   
+### word coordinate frame   
 우리가 사물(물체)의 위치를 표현할 때 기준으로 삼는 좌표계.(문제에 따라서 우리가 임의로 잡아서 사용가능)   
 카메라에서의 2차원 점은 camera coordinate로 표현한 것이기 때문에 carmera 위치에 따라 물체의 좌표가 다르게 표현될 수 있음   
 따라서 실체물체의 위치를 word coorinate frame 좌표계에서 표현
 
-###word coordinate frame->Camera coordinate
+### word coordinate frame->Camera coordinate
 <img width="217" alt="image" src="https://user-images.githubusercontent.com/81468129/169747803-884dae3b-8c69-4a76-b39e-c62b7643229c.png">   
 R:얼마나 회전됐는지 나타냄   
 t:얼마나 변형됐는지 나타냄   
@@ -63,7 +65,7 @@ t:얼마나 변형됐는지 나타냄
 Extrinsic matrix : 회전과 변환정보에 따라World coordinate 에서 정의된 좌표 값을 camera coordinate 좌표값으로 바꾸어주는 역할을 하는 행렬   
 Intrinsic matrix : camera coordinate 로 바뀐 점을 카메라의 사영하는 역할을 하는 행렬   
 
-####Camera Calibration
+#### Camera Calibration
 실제 3차원 좌표와 카메라 사영 좌표는 알고 있기때문에 K,R,t를 찾으면 관계를 알 수 있음
 
 
