@@ -44,11 +44,12 @@
  <br/>   
  <br/>       
  <br/>        
-## Camera
-### Homogeneous Coordinates
-사진(2D)을 원래모습(3D)를 표현
+        
+## Camera    
+### Homogeneous Coordinates      
+사진(2D)을 원래모습(3D)를 표현      
 임의의 0이 아닌 상수 w에 대해 (x, y)를 (wx, wy, w)로 표현하는 것(3차원의 경우에는 (X, Y, Z)를 (X, Y, Z, 1) 나 (wX, wY, wZ, w)로 표현)   
-n 차원 점을 n+1 차원으로 만든 좌표계   
+n 차원 점을 n+1 차원으로 만든 좌표계    
 <img width="235" alt="image" src="https://user-images.githubusercontent.com/81468129/169705456-f5f6791f-4a28-4622-a401-2683dff4d823.png">   
 
 ### Typical Perspective Model
