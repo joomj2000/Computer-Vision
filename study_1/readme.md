@@ -3,7 +3,12 @@
 컴퓨터를 활용하여, 정지 영상 또는 동영상으로부터 의미 있는 정보를 추출하는 방법을 연구하는 학문   
     
 컴퓨터 비전의 연구 분야는 크게 여섯 가지로 구분.    
-영상에서 대상을 찾는 검출(Detection), 영상을 여러 개의 픽셀 집합으로 나누는 분할(Segmentation), 찾은 대상이 무엇인지 식별하는 인식(Recognition), 유형에 맞게 분리하는 분류(Classification), 영상의 해상도 등 품질을 높이는 개선(Enhancement), 손실된 영상을 복구하는 복원(Restoration) 영역   
+1. 검출(Detection)  
+2. 분할(Segmentation)
+3. 인식(Recognition)
+4.  분류(Classification)
+5.  개선(Enhancement)
+6.   복원(Restoration) 영역   
 <br/>
 <br/>
 ### 목표
@@ -49,7 +54,7 @@
 * 광학문자인식 : 이미지나 영상데이터에서 문자나 숫자정보 추출하여 활용
 * 안면 인식: 사람의 얼굴을 인식하고 나아가 나이, 감정, 행동 인식 가능
 
-+ 실제로 컴퓨터 비전을 사용하여 작물을 효율적으로 재배하는 차세대 농업 로봇을 제작하는 회사인 Farmwise존재.
++ 컴퓨터 비전을 사용하여 작물을 효율적으로 재배하는 차세대 농업 로봇을 제작하는 회사인 Farmwise존재.
   먹는 작물과 잡초 차이를 컴퓨터비전을 통해 식별하는 기술을 사용. 농약을 사용하지 않아도 된다는 장점이 있음.   
 ![image](https://user-images.githubusercontent.com/81468129/170214876-10bbd129-46f1-419a-a956-266ea179c979.png)![image](https://user-images.githubusercontent.com/81468129/170214971-acab5b43-5dc7-4e46-81b6-a67e82ad999c.png)
 
@@ -64,14 +69,14 @@
 C라는 행렬에 어떠한 값을 곱하였을때만 기준값보다 크게 나오도록 설정한다면 다른 입력값과 구분 가능!(C만 통과되는 층만들기)   
 C를 걸러내는 필터는 3x3에서 1,0,-1이 가능하기 떄문에 3^9가됨.   
 하나로만 완벽한 필터링이 불가능하기 때문데 이러한 행렬의 곱은 여러개이며 이를 hidden layer이라고 함   
-컴퓨터는 입력값에 hidden layer에 해당하는 여러 행렬 곱을 곱하여 원하는 출력값을 얻도록 학습하는 (컴퓨터 입장에서는 수의 배열만 외우고 있는 것이 됨)   
+컴퓨터는 입력값에 hidden layer에 해당하는 여러 행렬 곱을 곱하여 원하는 출력값을 얻도록 학습! (컴퓨터 입장에서는 수의 배열만 외우고 있는 것이 됨)   
       
  <br/>       
  <br/>        
         
 ## Camera    
-### Homogeneous Coordinates      
-사진(2D)을 원래모습(3D)를 표현      
+### Homogeneous Coordinate      
+사진(2D)의 원래모습(3D)를 표현      
 임의의 0이 아닌 상수 w에 대해 (x, y)를 (wx, wy, w)로 표현하는 것(3차원의 경우에는 (X, Y, Z)를 (X, Y, Z, 1) 나 (wX, wY, wZ, w)로 표현)   
 n 차원 점을 n+1 차원으로 만든 좌표계    
 <img width="235" alt="image" src="https://user-images.githubusercontent.com/81468129/169705456-f5f6791f-4a28-4622-a401-2683dff4d823.png">   
@@ -82,12 +87,12 @@ x->fx/z+px, y->fy/z+py
    
 <img width="320" alt="image" src="https://user-images.githubusercontent.com/81468129/169744705-dce8b126-c205-4877-9cca-b095fac9e79f.png">  
 
-### word coordinate frame   
+### world coordinate frame   
 우리가 사물(물체)의 위치를 표현할 때 기준으로 삼는 좌표계.(문제에 따라서 우리가 임의로 잡아서 사용가능)   
 카메라에서의 2차원 점은 camera coordinate로 표현한 것이기 때문에 carmera 위치에 따라 물체의 좌표가 다르게 표현될 수 있음   
-따라서 실체물체의 위치를 word coorinate frame 좌표계에서 표현
+따라서 실체물체의 위치를 world coorinate frame 좌표계에서 표현
 
-### word coordinate frame->Camera coordinate
+### world coordinate frame->Camera coordinate
 <img width="217" alt="image" src="https://user-images.githubusercontent.com/81468129/169747803-884dae3b-8c69-4a76-b39e-c62b7643229c.png">   
 R:얼마나 회전됐는지 나타냄   
 t:얼마나 변형됐는지 나타냄   
