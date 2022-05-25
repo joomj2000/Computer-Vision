@@ -8,9 +8,11 @@
 3. 인식(Recognition)
 4.  분류(Classification)
 5.  개선(Enhancement)
-6.   복원(Restoration) 영역   
+6.   복원(Restoration) 영역     
+   
 <br/>
 <br/>
+   
 ### 목표   
 * naming :영상을 인식해서 어떤 물체인 지 분류   
 * captioning :영상을 보고 문장으로 표현   
