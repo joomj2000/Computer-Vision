@@ -11,7 +11,7 @@
 6.   복원(Restoration) 영역   
 <br/>
 <br/>
-### 목표
+### 목표   
 * naming :영상을 인식해서 어떤 물체인 지 분류   
 * captioning :영상을 보고 문장으로 표현   
 * 3D structure :영상을 보고 3 차원 구조 형태를 알아냄   
