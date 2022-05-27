@@ -47,5 +47,48 @@ FOV를 크게하려면 f를 증가시킴.(d조절은 힘듦.)
 ## Color image   
 컬러영상은 R,G,B 3 개의 channel 로 되어있음.   
 +) Color filter 1 개로 3가지 색을 표현하는 방법 : 픽셀마다 특정 색만 통과할 수 있는 filter 를 적용해서 색이 없는 부분은 주변 색들의 평균값으로 보간하여 채워줌. image sensor에 R,G,B성분만 담아서 컬러 영상 표현. 
+<br/><br/>   
+
+## image filtering   
+##### noise   
+원본영상보다 흐릿하게 보이거나, 점들이 있는 부분   
+* salt and pepper noise : 검은점과 흰점   
+* impulse noise : 갑자기 튀는 흰색 점   
+* gaussian noise : 정규분호츷 따르는 값이 random하게 더해진 것      
+<img width="191" alt="image" src="https://user-images.githubusercontent.com/81468129/170737244-a40444c5-ab9e-45e6-b996-6d44d34ef33f.png">    
+<br/>   
+
+noise 영상을 weight average를 이용해 제거함.   
+(weight들을 filter(kernel)라고 함.)   
+input영상에 대해 Filter를 한칸씩 이동하면서 계산된 값을 해당 filter의 가운데 위치의 값으로 저장.   
+<img width="305" alt="image" src="https://user-images.githubusercontent.com/81468129/170737797-2fbe2ffa-029a-4fbf-8b6e-81e5e509a1d5.png">   
+이렇게 입력영상에 Filter의 값을 곱해서 더해주는 것을 convolution이라고함.   
+<br/><br/>    
+
+## Edge case
+edge조건에 따라 convolution을 하는 경우를 지정해 줄 수 있음(-> 출력영상의 크기조절)   
+* full : filter의 한 부분이라도 입력영상의 값이 있으면 convolution 연산수행/ 출력영상이 원래 영상보다 커짐.   
+* same : filter의 중앙 위치에 입력영상이 잆으면 convolution 연산수행/ 출력영상은 입력영상과 같은 크기 가짐.   
+* vaild : filter의 모든 위치에 입력영상의 값이 있을때 convolution 연산 수행/ 출력영상의 크기가 작아짐.   
+<br/>   
+##### 출력영상이 입력영상보다 크거나 같을때 비워져 있는 부분 처리 
+* Symm : 바로아래의 값 복사하여 채우기   
+* Circular/wrap : 맨아래와 위에 값 복사하여 채우기   
+* pad/fill : 0으로 모든 값 채우기(zero padding)   
+<br/><br/>   
+
+## Linear filter   
+<img width="409" alt="image" src="https://user-images.githubusercontent.com/81468129/170740067-44ffc551-7ec3-4b98-9d84-e0bb1e9c5492.png">    
+<img width="403" alt="image" src="https://user-images.githubusercontent.com/81468129/170740165-ff37b04c-fec2-4a42-86ef-5f80c7b58217.png">    
+<https://www.youtube.com/watch?v=WeNpd_YEF6I>    
+<br/>   
+영상을 더 또렷하게 하는 원리는 입력영상에서 부드러운 부분을 뺴주는 방식!(detail한 부분의 가중치를 부여해서 더해주면 더 또렷한 영상을 얻을 수 있음/ 가중치를 더 많이 부여할수록 더욱 뚜렷.)   
+<img width="369" alt="image" src="https://user-images.githubusercontent.com/81468129/170740604-cb0196df-fcf2-48c3-9e45-8d068e3b6a6a.png">     
+
+
+
+
+
+
 
 
