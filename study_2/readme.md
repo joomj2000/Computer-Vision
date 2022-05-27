@@ -70,7 +70,8 @@ edge조건에 따라 convolution을 하는 경우를 지정해 줄 수 있음(->
 * full : filter의 한 부분이라도 입력영상의 값이 있으면 convolution 연산수행/ 출력영상이 원래 영상보다 커짐.   
 * same : filter의 중앙 위치에 입력영상이 잆으면 convolution 연산수행/ 출력영상은 입력영상과 같은 크기 가짐.   
 * vaild : filter의 모든 위치에 입력영상의 값이 있을때 convolution 연산 수행/ 출력영상의 크기가 작아짐.   
-<br/>   
+<br/>    
+   
 ##### 출력영상이 입력영상보다 크거나 같을때 비워져 있는 부분 처리 
 * Symm : 바로아래의 값 복사하여 채우기   
 * Circular/wrap : 맨아래와 위에 값 복사하여 채우기   
@@ -78,8 +79,7 @@ edge조건에 따라 convolution을 하는 경우를 지정해 줄 수 있음(->
 <br/><br/>   
 
 ## Linear filter   
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170740067-44ffc551-7ec3-4b98-9d84-e0bb1e9c5492.png">    
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170740165-ff37b04c-fec2-4a42-86ef-5f80c7b58217.png">    
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170740067-44ffc551-7ec3-4b98-9d84-e0bb1e9c5492.png"><img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170740165-ff37b04c-fec2-4a42-86ef-5f80c7b58217.png">    
    
 <https://www.youtube.com/watch?v=WeNpd_YEF6I>    
 <br/>   
