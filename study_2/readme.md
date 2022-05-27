@@ -63,6 +63,12 @@ noise 영상을 weight average를 이용해 제거함.
 input영상에 대해 Filter를 한칸씩 이동하면서 계산된 값을 해당 filter의 가운데 위치의 값으로 저장.   
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170737797-2fbe2ffa-029a-4fbf-8b6e-81e5e509a1d5.png">   
 이렇게 입력영상에 Filter의 값을 곱해서 더해주는 것을 convolution이라고함.   
+   
+##### convolution 연산 성질
+* commutative: f*g=g*f   
+* associative: (f*g)*h=f*(g*h)   
+* scalars factor out: kf*g=f*kg=k(f*g)   
+* distributes over+: f*(g+h)=f*g+f*h   
 <br/><br/>    
 
 ## Edge case
@@ -85,6 +91,24 @@ edge조건에 따라 convolution을 하는 경우를 지정해 줄 수 있음(->
 <br/>   
 영상을 더 또렷하게 하는 원리는 입력영상에서 부드러운 부분을 뺴주는 방식!(detail한 부분의 가중치를 부여해서 더해주면 더 또렷한 영상을 얻을 수 있음/ 가중치를 더 많이 부여할수록 더욱 뚜렷.)   
 <img width="369" alt="image" src="https://user-images.githubusercontent.com/81468129/170740604-cb0196df-fcf2-48c3-9e45-8d068e3b6a6a.png">     
+<br/><br/>   
+
+## Box smoothing   
+영상이 모자이크된 것처럼 보일떄 해결방법   
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170744391-312645f9-dfca-40b8-934d-885e43bb3d1e.png">     
+per-pixel weights(중앙으로부터 거리에 따라 값이 다른 filter=gaussian filter)을 적용하여 해결    
+필터의 시그마(분산)을 조정하여 필터의 크기 조절 가능(보통 필터크기의 1/6정도로 시그마 설정)   
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170744686-9f5e908d-f79a-47d9-a146-4f15954ff620.png">   
+<br/><br/>   
+
+## Median filter   
+흰색점이 있는 noise를 해결하기 위해 사용   
+중간값을 사용하는 filter. output값들을 정렬하여 그 중 중간값을 선택   
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170745307-80eded3b-def6-4c7b-b6b6-fcfadde6b11d.png">    
+
+
+
+
 
 
 
