@@ -5,7 +5,7 @@ pinhole camara에서 pinhole을 통과하는 모든 ray들을 film에 사영.
 pinhole 크기가 클수로 많은 rays가 들어와 밝지만 흐리게 보임/ pinhole 크기가 작으면 선명하지만 어둡게 보임.   
 pinhole의 크기가 너무 작으면 회절이 발생함    
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/81468129/170657889-7335d28a-c17e-4606-a79e-74295c0aadd5.png">   
-<img width="363" alt="image" src="https://user-images.githubusercontent.com/81468129/170657942-9fd9adb2-148b-427d-b278-747b1f2055c3.png">   
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/81468129/170657942-9fd9adb2-148b-427d-b278-747b1f2055c3.png">   
    
 <br/><br/>   
    
@@ -18,14 +18,14 @@ lens는 빛을 film에 모아주는 역할을 함
    
 lens를 통과한 rays는 film 사영됨-> focal point가 film에 정확히 있어야 물체의 상이 잘 맺힘!
 * 물체가 가까울 때: 원래 상이 맺히는 거리보다 짧아 뭉쳐보임.   
-<img width="349" alt="image" src="https://user-images.githubusercontent.com/81468129/170658657-d737187d-868b-4088-a9bf-bf93afa7d8d4.png">   
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170658657-d737187d-868b-4088-a9bf-bf93afa7d8d4.png">   
 * 물체가 멀 때: focal point를 지나고나서 상이 맺혀 뭉쳐보임   
-<img width="347" alt="image" src="https://user-images.githubusercontent.com/81468129/170658815-eaa8a988-3e13-41d6-9e72-d30213bb4bee.png">   
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170658815-eaa8a988-3e13-41d6-9e72-d30213bb4bee.png">   
 * 물체가 적당한 거리일 때: focal point가 film에 딱 맞을때로 선명한 상을 얻을 수 있음.    
-<img width="330" alt="image" src="https://user-images.githubusercontent.com/81468129/170658954-8ee56865-0bf6-4431-b9a7-84d842039f76.png">    
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170658954-8ee56865-0bf6-4431-b9a7-84d842039f76.png">    
 
 ## image plane에 상을 잘 맺히게 하기 위한 물체,lens,focal point사이의 관계   
-<img width="231" alt="image" src="https://user-images.githubusercontent.com/81468129/170659300-e71c82bc-f14a-4257-ae5c-c6184495c55f.png">   
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170659300-e71c82bc-f14a-4257-ae5c-c6184495c55f.png">   
 y'/(D'-f)=y/f -> y'/y=(D'-f)/f   
 y'/D'=y/D -> y'/y=D'/D   
 위 두 식을 통해 D'/D=(D'-f)/f -> 1/D+1/D'=1/f 를 얻을 수 있음   
@@ -40,7 +40,7 @@ y'/D'=y/D -> y'/y=D'/D
 
 ## FOV(Field of View)   
 카메라가 담을 수 있는 각도(화각)을 의미.   
-<img width="238" alt="image" src="https://user-images.githubusercontent.com/81468129/170660507-45d56afd-a8e8-41dd-b823-0d23732113f1.png">    
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170660507-45d56afd-a8e8-41dd-b823-0d23732113f1.png">    
 FOV를 크게하려면 f를 증가시킴.(d조절은 힘듦.)      
 <br/><br/>   
 
@@ -55,13 +55,13 @@ FOV를 크게하려면 f를 증가시킴.(d조절은 힘듦.)
 * salt and pepper noise : 검은점과 흰점   
 * impulse noise : 갑자기 튀는 흰색 점   
 * gaussian noise : 정규분호츷 따르는 값이 random하게 더해진 것      
-<img width="191" alt="image" src="https://user-images.githubusercontent.com/81468129/170737244-a40444c5-ab9e-45e6-b996-6d44d34ef33f.png">    
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170737244-a40444c5-ab9e-45e6-b996-6d44d34ef33f.png">    
 <br/>   
 
 noise 영상을 weight average를 이용해 제거함.   
 (weight들을 filter(kernel)라고 함.)   
 input영상에 대해 Filter를 한칸씩 이동하면서 계산된 값을 해당 filter의 가운데 위치의 값으로 저장.   
-<img width="305" alt="image" src="https://user-images.githubusercontent.com/81468129/170737797-2fbe2ffa-029a-4fbf-8b6e-81e5e509a1d5.png">   
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170737797-2fbe2ffa-029a-4fbf-8b6e-81e5e509a1d5.png">   
 이렇게 입력영상에 Filter의 값을 곱해서 더해주는 것을 convolution이라고함.   
 <br/><br/>    
 
@@ -78,8 +78,8 @@ edge조건에 따라 convolution을 하는 경우를 지정해 줄 수 있음(->
 <br/><br/>   
 
 ## Linear filter   
-<img width="409" alt="image" src="https://user-images.githubusercontent.com/81468129/170740067-44ffc551-7ec3-4b98-9d84-e0bb1e9c5492.png">    
-<img width="403" alt="image" src="https://user-images.githubusercontent.com/81468129/170740165-ff37b04c-fec2-4a42-86ef-5f80c7b58217.png">    
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170740067-44ffc551-7ec3-4b98-9d84-e0bb1e9c5492.png">    
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/81468129/170740165-ff37b04c-fec2-4a42-86ef-5f80c7b58217.png">    
    
 <https://www.youtube.com/watch?v=WeNpd_YEF6I>    
 <br/>   
