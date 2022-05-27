@@ -4,7 +4,7 @@ pinhole camara에서 pinhole을 통과하는 모든 ray들을 film에 사영.
    
 pinhole 크기가 클수로 많은 rays가 들어와 밝지만 흐리게 보임/ pinhole 크기가 작으면 선명하지만 어둡게 보임.   
 pinhole의 크기가 너무 작으면 회절이 발생함    
-<img width="358" alt="image" src="https://user-images.githubusercontent.com/81468129/170657889-7335d28a-c17e-4606-a79e-74295c0aadd5.png">   
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/81468129/170657889-7335d28a-c17e-4606-a79e-74295c0aadd5.png">   
 <img width="363" alt="image" src="https://user-images.githubusercontent.com/81468129/170657942-9fd9adb2-148b-427d-b278-747b1f2055c3.png">   
    
 <br/><br/>   
@@ -80,6 +80,7 @@ edge조건에 따라 convolution을 하는 경우를 지정해 줄 수 있음(->
 ## Linear filter   
 <img width="409" alt="image" src="https://user-images.githubusercontent.com/81468129/170740067-44ffc551-7ec3-4b98-9d84-e0bb1e9c5492.png">    
 <img width="403" alt="image" src="https://user-images.githubusercontent.com/81468129/170740165-ff37b04c-fec2-4a42-86ef-5f80c7b58217.png">    
+   
 <https://www.youtube.com/watch?v=WeNpd_YEF6I>    
 <br/>   
 영상을 더 또렷하게 하는 원리는 입력영상에서 부드러운 부분을 뺴주는 방식!(detail한 부분의 가중치를 부여해서 더해주면 더 또렷한 영상을 얻을 수 있음/ 가중치를 더 많이 부여할수록 더욱 뚜렷.)   
